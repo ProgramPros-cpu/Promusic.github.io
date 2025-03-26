@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Samsung Music">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Music Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <!-- Hidden song data (your original div) -->
+    <div id="songs-data" style="display: none;">
+        <!-- Song 1 -->
+        <div class="song-data"
+             data-title="Tuta nahi hoon majbut hua"
+             data-artist="Joy Kumbhakar"
+             data-cover="songs/song.png"
+             data-duration="3:20"
+             data-file="songs/song1 (1).mp3">
+        </div>
+        
+        <!-- Song 2 -->
+        <div class="song-data"
+             data-title="Socha Tha Saath Chalenge"
+             data-artist="Joy Kumbhakar"
+             data-cover="songs/song.png"
+             data-duration="3:35"
+             data-file="songs/song1 (2).mp3">
+        </div>
+        
+        <!-- Song 3 -->
+        <div class="song-data"
+             data-title="Ure geche Chinta vabna Ghum"
+             data-artist="Joy Kumbhakar"
+             data-cover="songs/song.png"
+             data-duration="2:58"
+             data-file="songs/song1 (4).mp3">
+        </div>
+        
+        <!-- Song 4 -->
+        <div class="song-data"
+             data-title="Tomai Hrid Majhar rakhbo"
+             data-artist="Rabindra Nath Tagore"
+             data-cover="songs/song.png"
+             data-duration="2:17"
+             data-file="songs/song1 (6).mp3">
+        </div>
+        
+        <!-- Song 5 -->
+        <div class="song-data"
+             data-title="Aami Tomar Kache"
+             data-artist="SVF"
+             data-cover="songs/song.png"
+             data-duration="4:03"
+             data-file="songs/Aami Tomar Kache.mp3">
+        </div>
+        
+        <!-- Song 6 -->
+        <div class="song-data"
+             data-title="Ami Sudhu Cheyechhi Tomay"
+             data-artist="Eskay Movies"
+             data-cover="songs/song.png"
+             data-duration="2:56"
+             data-file="songs/Ami Sudhu Cheyechhi Tomay.mp3">
+        </div>
+        
+        <!-- Song 7 -->
+        <div class="song-data"
+             data-title="Banjaara"
+             data-artist="T-Series"
+             data-cover="songs/song.png"
+             data-duration="5:33"
+             data-file="songs/Banjaara.mp3">
+        </div>
+        
+        <!-- Song 8 -->
+        <div class="song-data"
+             data-title="Borbaad Hoyechi Ami"
+             data-artist="SVF"
+             data-cover="songs/song.png"
+             data-duration="4:58"
+             data-file="songs/Borbaad Hoyechi Ami.mp3">
+        </div>
+        
+        <!-- Song 9 -->
+        <div class="song-data"
+             data-title="Chadna Tola"
+             data-artist="Rupak Tiary"
+             data-cover="songs/song.png"
+             data-duration="2:47"
+             data-file="songs/Chadna Tola.mp3">
+        </div>
+        
+        <!-- Song 10 -->
+        <div class="song-data"
+             data-title="Chokh Tule Dekho Na Ke Eseche Remix"
+             data-artist="Dj Suman Raj Official"
+             data-cover="songs/song.png"
+             data-duration="4:09"
+             data-file="songs/Chokh Tule Dekho Na Ke Eseche Remix.mp3">
+        </div>
+        
+        <!-- Song 11 -->
+        <div class="song-data"
+             data-title="Cholre Cholre Bhai"
+             data-artist="SVF Music"
+             data-cover="songs/song.png"
+             data-duration="5:34"
+             data-file="songs/Cholre Cholre Bhai.mp3">
+        </div>
+        
+        <!-- Song 12 -->
+        <div class="song-data"
+             data-title="Dekhechhi Rupshagore"
+             data-artist="SVF Music"
+             data-cover="songs/song.png"
+             data-duration="3:42"
+             data-file="songs/Dekhechhi Rupshagore.mp3">
+        </div>
+        
+        <!-- Song 13 -->
+        <div class="song-data"
+             data-title="Dev X Jeet Dance Mashup"
+             data-artist="Dj TNY"
+             data-cover="songs/song.png"
+             data-duration="7:11"
+             data-file="songs/Dev X Jeet Dance Mashup.mp3">
+        </div>
+        
+        <!-- Song 14 -->
+        <div class="song-data"
+             data-title="Din ase din jai tomar asai"
+             data-artist="রঙহীন রামধনু"
+             data-cover="songs/song.png"
+             data-duration="5:20"
+             data-file="songs/Din ase din jai tomar asai.mp3">
+        </div>
+        
+        <!-- Song 15 -->
+        <div class="song-data"
+             data-title="E Bhabe Golpo Hok"
+             data-artist="Rupak Tiary"
+             data-cover="songs/song.png"
+             data-duration="3:22"
+             data-file="songs/E Bhabe Golpo Hok.mp3">
+        </div>
+        
+        <!-- Song 16 -->
+        <div class="song-data"
+             data-title="Elo Elo"
+             data-artist="Rupak Tiary"
+             data-cover="songs/song.png"
+             data-duration="3:37"
+             data-file="songs/elo elo.mp3">
+        </div>
+        
+        <!-- Song 17 -->
+        <div class="song-data"
+             data-title="Haye Re Biye"
+             data-artist="Surinder Films"
+             data-cover="songs/song.png"
+             data-duration="4:02"
+             data-file="songs/Haye Re Biye.mp3">
+        </div>
+        
+        <!-- Song 18 -->
+        <div class="song-data"
+             data-title="Humnava Mere"
+             data-artist="T-Series"
+             data-cover="songs/song.png"
+             data-duration="6:12"
+             data-file="songs/Humnava Mere.mp3">
+        </div>
+        
+        <!-- Song 19 -->
+        <div class="song-data"
+             data-title="Jodidong Hridoyong Tobo"
+             data-artist="Rupak Tiary"
+             data-cover="songs/song.png"
+             data-duration="2:29"
+             data-file="songs/Jodidong Hridoyong Tobo.mp3">
+        </div>
+        
+        <!-- Song 20 -->
+        <div class="song-data"
+             data-title="Jotoi Koro Bahana"
+             data-artist="Channel B Music"
+             data-cover="songs/song.png"
+             data-duration="3:30"
+             data-file="songs/Jotoi Koro Bahana.mp3">
+        </div>
+        
+        <!-- Song 21 -->
+        <div class="song-data"
+             data-title="Khoka Chalu Cheez"
+             data-artist="Eskay Movies"
+             data-cover="songs/song.png"
+             data-duration="3:02"
+             data-file="songs/Khoka Chalu Cheez.mp3">
+        </div>
+        
+        <!-- Song 22 -->
+        <div class="song-data"
+             data-title="Le Paglu Dance Remix"
+             data-artist="MS CREATION Live"
+             data-cover="songs/song.png"
+             data-duration="3:11"
+             data-file="songs/Le Paglu Dance Remix.mp3">
+        </div>
+        
+        <!-- Song 23 -->
+        <div class="song-data"
+             data-title="Na Re Na"
+             data-artist="SVF"
+             data-cover="songs/song.png"
+             data-duration="4:24"
+             data-file="songs/Na Re Na.mp3">
+        </div>
+        
+        <!-- Song 24 -->
+        <div class="song-data"
+             data-title="Nonstop Troll Mashup"
+             data-artist="Joy Kumbhakar"
+             data-cover="songs/song.png"
+             data-duration="10:32"
+             data-file="songs/Nonstop Troll Mashup.mp3">
+        </div>
+        
+        <!-- Song 25 -->
+        <div class="song-data"
+             data-title="Parbona Ami Charte Toke"
+             data-artist="SVF Music"
+             data-cover="songs/song.png"
+             data-duration="3:51"
+             data-file="songs/Parbona Ami Charte Toke.mp3">
+        </div>
+        
+        <!-- Song 26 -->
+        <div class="song-data"
+             data-title="Radharani"
+             data-artist="Surinder Films"
+             data-cover="songs/song.png"
+             data-duration="3:56"
+             data-file="songs/Radharani.mp3">
+        </div>
+        
+        <!-- Song 27 -->
+        <div class="song-data"
+             data-title="Rajar Raja"
+             data-artist="Surinder Films"
+             data-cover="songs/song.png"
+             data-duration="3:30"
+             data-file="songs/Rajar Raja.mp3">
+        </div>
+        
+        <!-- Song 28 -->
+        <div class="song-data"
+             data-title="Sojoni"
+             data-artist="Bv Photography"
+             data-cover="songs/song.png"
+             data-duration="3:35"
+             data-file="songs/Sojoni.mp3">
+        </div>
+        
+        <!-- Song 29 -->
+        <div class="song-data"
+             data-title="Subha Mangalam"
+             data-artist="Surinder Films"
+             data-cover="songs/song.png"
+             data-duration="4:00"
+             data-file="songs/Subha Mangalam.mp3">
+        </div>
+        
+        <!-- Song 30 -->
+        <div class="song-data"
+             data-title="Jodi bare bare"
+             data-artist="Hasan Joy"
+             data-cover="songs/song.png"
+             data-duration="4:00"
+             data-file="songs/Jodi bare bare eki sure prem tomay kaday.mp3">
+        </div>
+        
+        <!-- Song 31 -->
+        <div class="song-data"
+             data-title="Tumi Amar Chirosathi"
+             data-artist="SVF Music"
+             data-cover="songs/song.png"
+             data-duration="4:04"
+             data-file="songs/Tumi Amar Chirosathi.mp3">
+        </div>
+    </div>
+</div>
+    <!-- Rest of your HTML remains exactly the same -->
+    <div class="header">
+        
+        <div class="logo">
+            <button class="button">
+                <span class="actual-text">&nbsp;ProgramPros&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;ProgramPros&nbsp;</span>
+            </button>
+        </div>
+        <div id="search-container">
+            <input type="text" id="song-search" placeholder="Search songs by title or artist...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        
+        <div class="header-icons">
+   <i class="fas fa-ellipsis-vertical" id="menu-button"></i>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="main-content">
+        <div class="tabs">
+            <div class="tab active" data-tab="tracks">Tracks</div>
+            <div class="tab" data-tab="playlists">Playlists</div>
+            <div class="tab" data-tab="albums">Albums</div>
+            <div class="tab" data-tab="artists">Artists</div>
+        </div>
+
+        <!-- Tracks Tab Content -->
+        <div class="tab-content active" id="tracks-content">
+            <div class="songs-list" id="songs-list">
+                <!-- Tracks will be shown here -->
+            </div>
+        </div>
+
+        <!-- Playlists Tab Content -->
+        <div class="tab-content" id="playlists-content">
+            <div class="playlists-list" id="playlists-list">
+                <!-- Playlists will be rendered here -->
+            </div>
+            <div class="playlist-view" id="playlist-view" style="display: none;">
+                <div class="playlist-view-header">
+                    <i class="fas fa-arrow-left" id="back-to-playlists"></i>
+                    <h2 id="playlist-view-title">Playlist</h2>
+                </div>
+                <div class="playlist-songs" id="playlist-songs-list">
+                    <!-- Playlist songs will be rendered here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Albums Tab Content -->
+        <div class="tab-content" id="albums-content">
+            <div class="albums-list" id="albums-list">
+                <!-- Albums will be shown here -->
+            </div>
+        </div>
+
+        <!-- Artists Tab Content -->
+        <div class="tab-content" id="artists-content">
+            <div class="artists-list" id="artists-list">
+                <!-- Artists will be shown here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Playlist Button (should be in your header/menu, not in tab content) -->
+    <div class="menu-item" id="playlist-button">
+        <i class="fas fa-plus"></i> Create Playlist
+    </div>
+
+    <!-- Playlist Creation Modal (should be at bottom of body) -->
+    <div class="playlist-modal" id="playlist-modal">
+        <div class="playlist-header">
+            <i class="fas fa-chevron-left" id="close-playlist"></i>
+            <div class="playlist-title">Create Playlist</div>
+        </div>
+        <div class="playlist-content">
+            <input type="text" id="playlist-name" placeholder="Playlist name">
+            <div class="songs-list" id="playlist-songs">
+                <!-- Songs will be added here dynamically -->
+            </div>
+            <button id="save-playlist">Save Playlist</button>
+        </div>
+    </div>
+
+    <!-- Overlay for modals -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="player-bar">
+        <div class="progress-container">
+            <div class="progress-time" id="current-time">0:00</div>
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="progress-time" id="duration">0:00</div>
+        </div>
+        <div class="player-controls">
+            <div class="player-info" id="mini-player-info">
+                <img src="https://via.placeholder.com/48" alt="Cover" class="player-cover" id="mini-cover">
+                <div class="player-text">
+                    <div class="player-title" id="mini-title">No song selected</div>
+                    <div class="player-artist" id="mini-artist"></div>
+                </div>
+            </div>
+            <div class="player-buttons">
+                <i class="fas fa-random" id="shuffle-button" title="Shuffle"></i>
+                <i class="fas fa-step-backward" id="prev-button"></i>
+                <i class="fas fa-play" id="play-button"></i>
+                <i class="fas fa-step-forward" id="next-button"></i>
+                <i class="fas fa-redo" id="repeat-button" title="Repeat"></i>
+            </div>
+            <div class="volume-control">
+                <i class="fas fa-volume-up volume-icon"></i>
+                <div class="volume-slider-container">
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <div class="volume-level-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="now-playing-view" id="now-playing-view">
+        <div class="now-playing-header">
+            <i class="fas fa-chevron-down back-button" id="back-button"></i>
+            <div>Now Playing</div>
+            <i class="fas fa-ellipsis-vertical"></i>
+        </div>
+        <img src="https://via.placeholder.com/400" alt="Cover" class="now-playing-cover" id="now-playing-cover">
+        <div class="now-playing-info">
+            <div class="now-playing-title" id="now-playing-title">No song selected</div>
+            <div class="now-playing-artist" id="now-playing-artist"></div>
+        </div>
+        <div class="now-playing-progress">
+            <div class="progress-container">
+                <div class="progress-time" id="np-current-time">0:00</div>
+                <div class="progress-bar" id="np-progress-bar">
+                    <div class="progress" id="np-progress"></div>
+                </div>
+                <div class="progress-time" id="np-duration">0:00</div>
+            </div>
+        </div>
+        <div class="now-playing-controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward" id="np-prev-button"></i>
+            <i class="fas fa-play" id="np-play-button"></i>
+            <i class="fas fa-step-forward" id="np-next-button"></i>
+            <i class="fas fa-redo"></i>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="menu">
+        <div class="menu-header">
+            <div class="menu-title">Menu</div>
+            <i class="fas fa-times close-menu" id="close-menu"></i>
+        </div>
+        <!-- Add this inside your existing settings menu -->
+        <!-- Add this inside your existing settings dropdown/menu -->
+        <div class="settings-menu">
+            <!-- Your other settings items... -->
+
+            <!-- Shake Control Toggle -->
+            <div class="setting-item">
+                <div class="setting-label">
+                    <i class="fas fa-mobile-alt"></i>
+                    Shake to Change Song
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="shake-toggle">
+                    <span class="slider"></span>
+                </label>
+                <div class="setting-description">Shake your device to skip tracks</div>
+            </div>
+        </div>
+        <div class="menu-item" id="equalizer-button">Equalizer</div>
+
+        <!-- Add this modal at the bottom of your body (before the closing </body> tag) -->
+        <div class="equalizer-modal" id="equalizer-modal">
+            <div class="equalizer-header">
+                <i class="fas fa-chevron-left" id="close-equalizer"></i>
+                <div class="equalizer-title">Equalizer</div>
+                <div class="equalizer-presets">Presets</div>
+            </div>
+            <div class="equalizer-bands">
+                <div class="band">
+                    <div class="band-label">60Hz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="0">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">150Hz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="1">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">400Hz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="2">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">1kHz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="3">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">2.4kHz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="4">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">6kHz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="5">
+                    <div class="band-value">0dB</div>
+                </div>
+                <div class="band">
+                    <div class="band-label">15kHz</div>
+                    <input type="range" class="band-slider" min="-12" max="12" value="0" data-band="6">
+                    <div class="band-value">0dB</div>
+                </div>
+            </div>
+            <div class="equalizer-preset-list">
+                <div class="preset" data-preset="flat">Flat</div>
+                <div class="preset" data-preset="pop">Pop</div>
+                <div class="preset" data-preset="rock">Rock</div>
+                <div class="preset" data-preset="jazz">Jazz</div>
+                <div class="preset" data-preset="classical">Classical</div>
+                <div class="preset" data-preset="bass">Bass Boost</div>
+            </div>
+        </div>
+
+        <div class="menu-item" id="sleep-timer-button">Sleep timer</div>
+
+        <!-- Add this modal at the bottom of your body -->
+        <div class="sleep-timer-modal" id="sleep-timer-modal">
+            <div class="sleep-timer-header">
+                <i class="fas fa-chevron-left" id="close-sleep-timer"></i>
+                <div class="sleep-timer-title">Sleep Timer</div>
+            </div>
+            <div class="sleep-timer-options">
+                <div class="timer-option" data-minutes="5">5 minutes</div>
+                <div class="timer-option" data-minutes="15">15 minutes</div>
+                <div class="timer-option" data-minutes="30">30 minutes</div>
+                <div class="timer-option" data-minutes="45">45 minutes</div>
+                <div class="timer-option" data-minutes="60">1 hour</div>
+                <div class="timer-option" data-minutes="90">1.5 hours</div>
+                <div class="timer-option" id="custom-timer">Custom</div>
+                <div class="timer-option" id="cancel-timer" style="color: #bd0000;">Cancel timer</div>
+            </div>
+            <div class="custom-timer-container" id="custom-timer-container" style="display: none;">
+                <input type="number" id="custom-minutes" min="1" max="240" placeholder="Minutes">
+                <button id="set-custom-timer">Set</button>
+            </div>
+            <div class="timer-status" id="timer-status"></div>
+        </div>
+        <div class="menu-item">Lyrics</div>
+        <div class="menu-item">Help</div>
+    </div>
+
+    <audio id="audio-player"></audio>
+    <script src="script.js"></script>
+    <!-- Add this just before your other modals at the bottom -->
+    <div class="confirm-delete-dialog" id="confirm-delete-dialog">
+        <div class="confirm-delete-text">Are you sure you want to delete this playlist?</div>
+        <div class="confirm-delete-buttons">
+            <button class="confirm-delete-btn confirm-delete-cancel" id="cancel-delete">Cancel</button>
+            <button class="confirm-delete-btn confirm-delete-confirm" id="confirm-delete">Delete</button>
+        </div>
+    </div>
+    <script>
+        // This function will extract song data from HTML
+        function getSongsFromHTML() {
+            const songElements = document.querySelectorAll('#songs-data .song-data');
+            const songs = [];
+            
+            songElements.forEach(songEl => {
+                songs.push({
+                    title: songEl.dataset.title,
+                    artist: songEl.dataset.artist,
+                    cover: songEl.dataset.cover,
+                    duration: songEl.dataset.duration,
+                    file: songEl.dataset.file
+                });
+            });
+            
+            return songs;
+        }
+        
+        // Initialize your player with songs from HTML
+        const songs = getSongsFromHTML();
+        
+        // The rest of your JavaScript code remains the same
+        // Just replace any direct references to the songs array with this one
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
